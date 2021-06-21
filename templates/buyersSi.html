@@ -1,0 +1,22 @@
+{% extends 'example.html' %}
+
+{% block content %}
+</center>
+
+        <h1> Byer Sign in  </h1>
+
+
+<form method="POST">
+
+    {% csrf_token %}
+
+
+    <input type="text" name="mail" placeholder="Mail"> <br>
+    <input type="password" name="pass" placeholder="Password"> <br>
+
+    <input type="submit" value="Submit"/>
+
+
+</form>
+</center>
+{% endblock %}

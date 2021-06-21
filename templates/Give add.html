@@ -1,0 +1,25 @@
+{% extends 'example.html' %}
+
+{% block content %}
+
+<center>
+
+        <h1>Give Add</h1>
+
+<form method="POST">
+
+    {% csrf_token %}
+
+
+    <input type="text" name="car_name" placeholder="Car Name"> <br>
+    <input type="number" name="car_id" placeholder="Car ID"> <br>
+    <input type="number" name="price_per_day" placeholder="price"> <br>
+    <input type="text" name="car_type" placeholder="Area"> <br>
+    <input type="text" name="car_img" placeholder="Car Model"> <br>
+    <input type="submit" value="Submit"/>
+
+</form>
+
+</center>
+
+{% endblock %}

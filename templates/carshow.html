@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <list> of car items </list>
+  {% for s in allCar %}
+     {{s.car_name}} <br>
+     {{s.car_id}} <br>
+    {{s.price_per_day}} <br>
+    {{s.car_type}} <br>
+    {{s.car_img}} <br>
+  {% endfor %}
+</body>
+</html>

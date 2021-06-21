@@ -1,0 +1,24 @@
+
+
+{% extends 'example.html' %}
+
+<center>
+
+{% block content %}
+<center>
+      <p>Car Name Car ID Rent/Day Type Model</p>
+
+   {% for s in allflat %}
+
+     {{s.car_name}}
+     {{s.car_id}}
+    {{s.price_per_day}}
+    {{s.car_type}}
+    {{s.car_img}} <br>
+
+  {% endfor %}
+</center>
+
+
+{% endblock %}
+
